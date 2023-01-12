@@ -4,6 +4,7 @@ class RocksdbAT6 < Formula
   url "https://github.com/facebook/rocksdb/archive/v6.29.5.tar.gz"
   sha256 "ddbf84791f0980c0bbce3902feb93a2c7006f6f53bfd798926143e31d4d756f0"
   license any_of: ["GPL-2.0-only", "Apache-2.0"]
+  revision 1
 
   keg_only :versioned_formula
 
