@@ -6,6 +6,12 @@ class RocksdbAT6 < Formula
   license any_of: ["GPL-2.0-only", "Apache-2.0"]
   revision 1
 
+  bottle do
+    root_url "https://ghcr.io/v2/alexreg/dev"
+    sha256 cellar: :any,                 monterey:     "9c8f11083380daf719cc095bba8ec80add6473f5a793ea4d7d7a35f0a625b0a0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d1fcefccc1a2f4fa98cd7bea97ff12033c7568248e966a0182106b28dc8c90d7"
+  end
+
   keg_only :versioned_formula
 
   depends_on "cmake" => :build
